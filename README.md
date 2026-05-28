@@ -14,8 +14,6 @@ Bash
 pip install -r requirements.txt
 ```
 
-Bash
-pip install ultralytics opencv-python pandas matplotlib
 # Hướng dẫn Sử dụng
 Bước 1: Chuẩn bị Dữ liệu (Data Preparation)
 Script yolo_format.py chịu trách nhiệm đọc video gốc và file annotation (.objects.txt) từ bộ VIRAT, sau đó chuyển đổi sang định dạng YOLO chuẩn.
