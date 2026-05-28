@@ -65,8 +65,8 @@ def process_video(model_path, video_path, output_path):
     cv2.destroyAllWindows()
 
 if __name__ == '__main__':
-    MODEL_WEIGHTS = r"C:\Users\Asus\Desktop\DL\w3\weight\best_640.pt"
-    INPUT_VIDEO = r"C:\Users\Asus\Downloads\VIRAT_S_010200_03_000470_000567.mp4"
-    OUTPUT_VIDEO = "test_010200_1.mp4"
+    MODEL_WEIGHTS = r"weights\best_Agu_1280.pt"
+    INPUT_VIDEO = r"data\test.mp4"
+    OUTPUT_VIDEO = "test.mp4"
 
     process_video(MODEL_WEIGHTS, INPUT_VIDEO, OUTPUT_VIDEO)
