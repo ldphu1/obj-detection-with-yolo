@@ -1,6 +1,6 @@
 # Object Detection với YOLOv8 - VIRAT Video Dataset
 
-Tổng quan
+Tổng quan:
 * Bài toán: Nhận diện 3 lớp đối tượng: person, bike, car.
 
 * Dataset: Subset của VIRAT Video Dataset (Góc camera an ninh, đối tượng nhỏ, bối cảnh tĩnh).
