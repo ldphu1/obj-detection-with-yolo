@@ -36,7 +36,7 @@ Kích thước ảnh 640, thông số mặc định để lấy mốc so sánh.
 
 ```
 Bash
-yolo task=detect mode=train model=yolov8n.pt data=/kaggle/working/data_kaggle.yaml epochs=50 imgsz=640 batch=16 patience=30 hsv_h=0.0 hsv_s=0.0 hsv_v=0.0 name=Baseline_640
+yolo task=detect mode=train model=yolov8n.pt data=virat.yaml epochs=50 imgsz=640 batch=16 patience=30 hsv_h=0.0 hsv_s=0.0 hsv_v=0.0 name=Baseline_640
 ```
 
 2. HighRes_1280 (Độ phân giải cao):
@@ -45,7 +45,7 @@ Tăng kích thước ảnh lên 1280 để mô hình không bỏ sót các đố
 
 ```
 Bash
-yolo task=detect mode=train model=yolov8n.pt data=/kaggle/working/data_kaggle.yaml epochs=50 imgsz=1280 batch=16 patience=30 hsv_h=0.0 hsv_s=0.0 hsv_v=0.0 name=HighRes_1280A
+yolo task=detect mode=train model=yolov8n.pt data=virat.yaml epochs=50 imgsz=1280 batch=16 patience=30 hsv_h=0.0 hsv_s=0.0 hsv_v=0.0 name=HighRes_1280A
 ```
 3. Augmentation_1280 (Tối ưu - Khuyên dùng):
    
@@ -53,7 +53,7 @@ Kết hợp kích thước 1280 với Augmentation cực mạnh (Mosaic, Mixup, 
 
 ```
 Bash
-yolo task=detect mode=train model=yolov8n.pt data=/kaggle/working/data_kaggle.yaml epochs=50 imgsz=1280 batch=16 patience=30 mosaic=1.0 mixup=0.2 degrees=10.0 hsv_h=0.015 hsv_s=0.4 hsv_v=0.4 name=Augmentation_1280
+yolo task=detect mode=train model=yolov8n.pt data=virata.yaml epochs=50 imgsz=1280 batch=16 patience=30 mosaic=1.0 mixup=0.2 degrees=10.0 hsv_h=0.015 hsv_s=0.4 hsv_v=0.4 name=Augmentation_1280
 ```
 Bước 3: Inference & Tracking
 
