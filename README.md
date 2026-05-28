@@ -1,4 +1,4 @@
-# 🚀 Object Detection với YOLOv8 - VIRAT Video Dataset
+# Object Detection với YOLOv8 - VIRAT Video Dataset
 
 Tổng quan
 * Bài toán: Nhận diện 3 lớp đối tượng: person, bike, car.
@@ -7,8 +7,12 @@ Tổng quan
 
 * Model: YOLOv8n.
 
-# Cài đặt Môi trường (Setup)
+# Setup
 Đảm bảo bạn đã cài đặt Python 3.8+ và các thư viện cần thiết:
+```
+Bash
+pip install -r requirements.txt
+```
 
 Bash
 pip install ultralytics opencv-python pandas matplotlib
