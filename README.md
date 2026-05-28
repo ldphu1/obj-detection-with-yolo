@@ -15,7 +15,7 @@ pip install -r requirements.txt
 ```
 
 # Hướng dẫn Sử dụng
-Bước 1: Chuẩn bị Dữ liệu (Data Preparation)
+Bước 1: Chuẩn bị Dữ liệu
 
 Script yolo_format.py chịu trách nhiệm đọc video gốc và file annotation (.objects.txt) từ bộ VIRAT, sau đó chuyển đổi sang định dạng YOLO chuẩn.
 
@@ -26,12 +26,14 @@ python yolo_format.py
 Lưu ý: Thay đổi đường dẫn root và output_path trong hàm main cho phù hợp với máy của bạn.
 
 
-Bước 2: Huấn luyện Mô hình (Training)
+Bước 2: Huấn luyện Mô hình 
 
 Dự án tiến hành thử nghiệm 3 cấu hình khác nhau để tìm ra phương án tối ưu nhất cho bài toán đối tượng nhỏ. Chạy các lệnh sau trong terminal (hoặc Kaggle/Colab):
 
 1. Baseline_640 (Cơ bản):
+
 Kích thước ảnh 640, thông số mặc định để lấy mốc so sánh.
+
 ```
 Bash
 yolo task=detect mode=train model=yolov8n.pt data=/kaggle/working/data_kaggle.yaml epochs=50 imgsz=640 batch=16 patience=30 hsv_h=0.0 hsv_s=0.0 hsv_v=0.0 device=[0, 1] name=Baseline_640
